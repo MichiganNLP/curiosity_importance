@@ -1,14 +1,8 @@
 # What Makes a Question Curious?
 
-Anonymous code and reproducibility artifacts for the manuscript **“What Makes a
-Question Curious? Measuring Model Curiosity in Human–LLM Interactions.”**
+Paper -- **“What Makes a Question Curious? Measuring Model Curiosity in Human–LLM Interactions.”** (under review, https://arxiv.org/pdf/2610.33950v1) 
 
-This repository studies observable model curiosity: assistant questions that
-surface knowledge gaps, seek explanations, examine assumptions, or invite new
-perspectives and alternatives. It contains the taxonomy pipeline, Q1/Q2
-observational analyses, Q3 human-study construction code, sanitized row-level
-samples, aggregate result tables, paper figures, and an anonymous project page.
-
+This repository studies observable model curiosity: assistant questions that surface knowledge gaps, seek explanations, examine assumptions, or invite new perspectives and alternatives. It contains the taxonomy pipeline, Q1/Q2 observational analyses, Q3 human-study construction code, sanitized row-level samples, aggregate result tables, paper figures)
 ## Repository layout
 
 ```text
@@ -24,7 +18,7 @@ samples, aggregate result tables, paper figures, and an anonymous project page.
 │   ├── q1_q2/       # aggregate paper-facing result tables
 │   └── q3/          # aggregate human-study and classifier tables
 ├── figures/         # selected paper figures
-├── docs/            # anonymous static project site for GitHub Pages
+├── docs/           
 └── outputs/         # local run outputs; ignored by Git except .gitkeep
 ```
 
@@ -143,14 +137,4 @@ python3 -m http.server 8000
 Stop the server with `Ctrl+C`. GitHub Pages can publish directly from the
 `docs/` directory on the default branch.
 
-## Anonymity and privacy
-
-See [`ANONYMIZATION.md`](ANONYMIZATION.md) before every public upload. This
-folder contains no Git history; commit metadata and the GitHub account or
-organization used to publish it can still reveal identity.
-
-## Citation
-
-Citation metadata is intentionally anonymous during review and should be
-updated after deanonymization.
 
