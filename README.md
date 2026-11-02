@@ -125,16 +125,4 @@ Dataset licenses and terms continue to govern any source conversations obtained
 from WildChat, OASST1, LMSYS-Chat-1M, or ShareGPT. This repository does not
 redistribute their raw conversation text.
 
-## Anonymous project page
-
-The static site is in `docs/`. Preview it locally from the repository root:
-
-```bash
-cd docs
-python3 -m http.server 8000
-```
-
-Stop the server with `Ctrl+C`. GitHub Pages can publish directly from the
-`docs/` directory on the default branch.
-
 
