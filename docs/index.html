@@ -15,7 +15,9 @@
       content="Measuring model curiosity in human-LLM interactions."
     />
     <meta property="og:image" content="assets/questions-in-the-wild.png" />
+    <meta property="og:url" content="https://lit.eecs.umich.edu/curiosity_importance/" />
     <title>What Makes a Question Curious?</title>
+    <link rel="canonical" href="https://lit.eecs.umich.edu/curiosity_importance/" />
     <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
     <script>document.documentElement.classList.add("js");</script>
     <link rel="stylesheet" href="styles.css" />
@@ -62,10 +64,18 @@
             <p class="dek">Measuring Model Curiosity in Human–LLM Interactions</p>
 
             <div class="authors" aria-label="Authors">
-              <span>Anonymous authors</span>
+              <a href="mailto:anganab@umich.edu">Angana Borah<sup>*1</sup></a>
+              <span>·</span>
+              <span>Rachana Ramchandar<sup>*2</sup></span>
+              <span>·</span>
+              <span>Inderjeet Nair<sup>1</sup></span>
+              <span>·</span>
+              <span>Rada Mihalcea<sup>1</sup></span>
             </div>
             <p class="affiliations">
-              <span>Anonymous research release</span>
+              <span><sup>1</sup> University of Michigan</span>
+              <span><sup>2</sup> PES University</span>
+              <span><sup>*</sup> Equal contribution</span>
             </p>
 
             <p class="hero-summary">
@@ -75,11 +85,24 @@
             </p>
 
             <div class="button-row">
-              <a class="button button-primary" href="#taxonomy">
-                Explore the taxonomy <span aria-hidden="true">↓</span>
+              <a class="button button-primary" href="paper.pdf">
+                Read the paper <span aria-hidden="true">↗</span>
               </a>
-              <a class="button button-secondary" href="#evidence">
-                See the evidence <span aria-hidden="true">↓</span>
+              <a
+                class="button button-secondary"
+                href="https://arxiv.org/abs/2610.33950"
+                target="_blank"
+                rel="noreferrer"
+              >
+                arXiv <span aria-hidden="true">↗</span>
+              </a>
+              <a
+                class="button button-secondary"
+                href="https://github.com/MichiganNLP/curiosity_importance"
+                target="_blank"
+                rel="noreferrer"
+              >
+                GitHub <span aria-hidden="true">↗</span>
               </a>
             </div>
           </div>
@@ -422,9 +445,12 @@
             <p class="kicker">06 — Citation</p>
             <h2>Build on this work.</h2>
             <p>
-              This anonymous release accompanies the manuscript and provides the taxonomy,
-              analysis code, sanitized samples, and aggregate results.
+              If this taxonomy or analysis supports your research, please cite the paper.
+              Questions and collaboration inquiries are welcome.
             </p>
+            <a class="text-link" href="mailto:anganab@umich.edu">
+              anganab@umich.edu <span aria-hidden="true">↗</span>
+            </a>
           </div>
 
           <div class="bibtex-card reveal">
@@ -432,12 +458,16 @@
               <span>BIBTEX</span>
               <button type="button" data-copy-citation>Copy citation</button>
             </div>
-            <pre><code id="bibtex">@misc{anonymous2026questioncurious,
+            <pre><code id="bibtex">@misc{borah2026questioncurious,
   title={What Makes a Question Curious? Measuring Model
          Curiosity in Human-LLM Interactions},
-  author={Anonymous},
+  author={Angana Borah and Rachana Ramchandar and
+          Inderjeet Nair and Rada Mihalcea},
   year={2026},
-  note={Anonymous manuscript}
+  eprint={2610.33950},
+  archivePrefix={arXiv},
+  primaryClass={cs.CL},
+  url={https://arxiv.org/abs/2610.33950}
 }</code></pre>
           </div>
         </div>
@@ -449,11 +479,12 @@
         <div class="footer-mark" aria-hidden="true">?</div>
         <p>
           What Makes a Question Curious?<br />
-          Anonymous research artifacts
+          University of Michigan · PES University
         </p>
         <div class="footer-links">
-          <a href="#taxonomy">Taxonomy</a>
-          <a href="#evidence">Results</a>
+          <a href="paper.pdf">Paper</a>
+          <a href="https://arxiv.org/abs/2610.33950" target="_blank" rel="noreferrer">arXiv</a>
+          <a href="https://github.com/MichiganNLP/curiosity_importance" target="_blank" rel="noreferrer">GitHub</a>
           <a href="#top">Back to top ↑</a>
         </div>
       </div>
