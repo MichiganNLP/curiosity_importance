@@ -1,0 +1,6 @@
+opportunity_type,n,should_ask_yes_pct,should_ask_optional_pct,should_ask_no_pct,yes_or_optional_pct,prefer_curiosity_C_pct,curiosity_awakening_C_pct,annoying_yes_pct
+advice_or_dilemma,43,41.9,34.9,23.3,76.7,39.5,60.5,9.3
+creative_or_research_framing,63,30.2,36.5,33.3,66.7,36.5,57.1,12.7
+learning_or_explanation,58,22.4,31.0,46.6,53.4,15.5,29.3,31.0
+reasoning_or_claim,19,36.8,21.1,42.1,57.9,36.8,52.6,26.3
+uncertainty_or_gap,85,21.2,37.6,41.2,58.8,18.8,47.1,23.5

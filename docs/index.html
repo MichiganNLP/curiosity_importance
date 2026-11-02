@@ -1,0 +1,462 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Project page for What Makes a Question Curious? Measuring Model Curiosity in Human-LLM Interactions."
+    />
+    <meta name="theme-color" content="#f4f0e8" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="What Makes a Question Curious?" />
+    <meta
+      property="og:description"
+      content="Measuring model curiosity in human-LLM interactions."
+    />
+    <meta property="og:image" content="assets/questions-in-the-wild.png" />
+    <title>What Makes a Question Curious?</title>
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <script>document.documentElement.classList.add("js");</script>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+
+  <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+
+    <header class="site-header" data-header>
+      <div class="nav-shell">
+        <a class="wordmark" href="#top" aria-label="Curious LLM home">
+          <span class="wordmark-mark">?</span>
+          <span>CURIOUS / LLM</span>
+        </a>
+        <button
+          class="menu-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="site-nav"
+          data-menu-toggle
+        >
+          <span class="sr-only">Toggle navigation</span>
+          <span></span><span></span>
+        </button>
+        <nav id="site-nav" class="site-nav" aria-label="Primary navigation" data-nav>
+          <a href="#taxonomy">Taxonomy</a>
+          <a href="#evidence">Evidence</a>
+          <a href="#human-study">Human study</a>
+          <a href="#takeaways">Takeaways</a>
+          <a href="#citation">Citation</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main-content">
+      <section class="hero" id="top">
+        <div class="hero-orbit orbit-one" aria-hidden="true"></div>
+        <div class="hero-orbit orbit-two" aria-hidden="true"></div>
+        <div class="shell hero-grid">
+          <div class="hero-copy reveal">
+            <p class="eyebrow"><span></span> Model curiosity in the wild</p>
+            <h1>What makes a question <em>curious?</em></h1>
+            <p class="dek">Measuring Model Curiosity in Human–LLM Interactions</p>
+
+            <div class="authors" aria-label="Authors">
+              <span>Anonymous authors</span>
+            </div>
+            <p class="affiliations">
+              <span>Anonymous research release</span>
+            </p>
+
+            <p class="hero-summary">
+              Not every question expresses curiosity. This work separates questions that
+              move a task along from questions that surface gaps, test assumptions, and
+              open new directions for thought.
+            </p>
+
+            <div class="button-row">
+              <a class="button button-primary" href="#taxonomy">
+                Explore the taxonomy <span aria-hidden="true">↓</span>
+              </a>
+              <a class="button button-secondary" href="#evidence">
+                See the evidence <span aria-hidden="true">↓</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="question-lab reveal" aria-label="Interactive question example">
+            <div class="lab-topbar">
+              <span>QUESTION LAB</span>
+              <span class="live-dot">LIVE EXAMPLE</span>
+            </div>
+            <div class="prompt-card">
+              <span class="speaker user-speaker">USER</span>
+              <p>“I’m not sure if my argument is strong enough.”</p>
+            </div>
+
+            <div class="lab-switch" role="tablist" aria-label="Question type">
+              <button
+                type="button"
+                role="tab"
+                aria-selected="false"
+                data-question-mode="flow"
+              >
+                Task flow
+              </button>
+              <button
+                type="button"
+                role="tab"
+                aria-selected="true"
+                data-question-mode="curious"
+                class="is-active"
+              >
+                Curiosity
+              </button>
+            </div>
+
+            <div class="response-card" aria-live="polite">
+              <div class="response-meta">
+                <span class="speaker model-speaker">MODEL</span>
+                <span data-question-label>REFLECTIVE</span>
+              </div>
+              <p data-question-output>What assumption are you making here?</p>
+              <button class="shuffle-button" type="button" data-shuffle>
+                Another example <span aria-hidden="true">↻</span>
+              </button>
+            </div>
+            <p class="lab-note" data-question-note>
+              Invites the user to examine evidence, uncertainty, or assumptions.
+            </p>
+          </div>
+        </div>
+
+        <div class="shell stat-strip reveal" aria-label="Study highlights">
+          <div>
+            <strong>17–28%</strong>
+            <span>of questions are curiosity-oriented</span>
+          </div>
+          <div>
+            <strong>4</strong>
+            <span>public conversation datasets</span>
+          </div>
+          <div>
+            <strong>92%</strong>
+            <span>human–judge agreement on curiosity</span>
+          </div>
+          <div>
+            <strong>230</strong>
+            <span>items judged in the human study</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-dark" id="taxonomy">
+        <div class="shell">
+          <div class="section-heading split-heading reveal">
+            <div>
+              <p class="kicker">01 — A working definition</p>
+              <h2>A question mark<br />is not enough.</h2>
+            </div>
+            <p>
+              We define model curiosity as observable epistemic behavior—not an internal
+              psychological state. Curious questions seek explanations, expose knowledge
+              gaps, challenge assumptions, or invite alternatives. Other useful questions
+              may simply clarify, coordinate, or maintain the conversation.
+            </p>
+          </div>
+
+          <div class="taxonomy-explorer reveal">
+            <div class="taxonomy-list" role="tablist" aria-label="Curiosity taxonomy">
+              <button class="taxonomy-tab is-active" type="button" role="tab" aria-selected="true" data-taxonomy="information">
+                <span>01</span> Information gap
+              </button>
+              <button class="taxonomy-tab" type="button" role="tab" aria-selected="false" data-taxonomy="causal">
+                <span>02</span> Causal–explanatory
+              </button>
+              <button class="taxonomy-tab" type="button" role="tab" aria-selected="false" data-taxonomy="exploratory">
+                <span>03</span> Exploratory broadening
+              </button>
+              <button class="taxonomy-tab" type="button" role="tab" aria-selected="false" data-taxonomy="reflective">
+                <span>04</span> Reflective–metacognitive
+              </button>
+              <button class="taxonomy-tab" type="button" role="tab" aria-selected="false" data-taxonomy="perspective">
+                <span>05</span> Perspective taking
+              </button>
+              <button class="taxonomy-tab" type="button" role="tab" aria-selected="false" data-taxonomy="counterfactual">
+                <span>06</span> Counterfactual–hypothetical
+              </button>
+            </div>
+
+            <div class="taxonomy-detail" aria-live="polite">
+              <div class="taxonomy-symbol" aria-hidden="true" data-taxonomy-symbol>?</div>
+              <p class="detail-label" data-taxonomy-label>INFORMATION GAP</p>
+              <blockquote data-taxonomy-example>“What problem does it solve?”</blockquote>
+              <p data-taxonomy-description>
+                Surfaces missing knowledge or information needed to understand the issue.
+              </p>
+              <div class="theory-chip" data-taxonomy-theory>
+                Information-gap theory · epistemic curiosity
+              </div>
+            </div>
+          </div>
+
+          <div class="boundary-grid reveal">
+            <article>
+              <p class="boundary-label curious-label">Curiosity-oriented</p>
+              <h3>Opens an epistemic path</h3>
+              <p>“What evidence would change your view?”</p>
+            </article>
+            <article>
+              <p class="boundary-label flow-label">Non-curiosity</p>
+              <h3>Moves the task along</h3>
+              <p>“What format should I use?”</p>
+            </article>
+            <article>
+              <p class="boundary-label caution-label">Problematic</p>
+              <h3>Probes or steers</h3>
+              <p>“Isn’t this clearly the best option?”</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="evidence">
+        <div class="shell">
+          <div class="section-heading reveal">
+            <p class="kicker">02 — Questions in the wild</p>
+            <h2>Curiosity appears.<br /><em>But it is not the default.</em></h2>
+            <p class="heading-copy">
+              Across WildChat, OASST1, LMSYS-Chat-1M, and ShareGPT, most genuine
+              assistant-to-user questions are instrumental rather than curiosity-oriented.
+              When curiosity does appear, it is concentrated in information-gap, causal,
+              and exploratory forms.
+            </p>
+          </div>
+
+          <figure class="paper-figure reveal">
+            <div class="figure-frame">
+              <img
+                src="assets/questions-in-the-wild.png"
+                alt="Stacked bars showing curiosity, non-curiosity, and problematic LLM questions across four datasets."
+                loading="lazy"
+                width="2992"
+                height="1165"
+              />
+            </div>
+            <figcaption>
+              <span>FIG. 01</span>
+              Curiosity-oriented questions account for a minority of LLM-question events
+              across all four datasets.
+            </figcaption>
+          </figure>
+
+          <div class="finding-grid reveal">
+            <article class="finding-card card-purple">
+              <span class="finding-number">01</span>
+              <h3>Curiosity is rare</h3>
+              <p>
+                Only 17–28% of model questions are curiosity-oriented across the four
+                datasets studied.
+              </p>
+            </article>
+            <article class="finding-card card-blue">
+              <span class="finding-number">02</span>
+              <h3>Its forms are uneven</h3>
+              <p>
+                Information-gap, causal, and exploratory questions dominate; reflective,
+                perspective, and counterfactual questions are rarer.
+              </p>
+            </article>
+            <article class="finding-card card-yellow">
+              <span class="finding-number">03</span>
+              <h3>Context changes the odds</h3>
+              <p>
+                Research, reasoning, and learning contexts more often precede model
+                curiosity than fully specified execution tasks.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-lilac" id="effects">
+        <div class="shell effects-grid">
+          <div class="effects-copy reveal">
+            <p class="kicker">03 — What follows a curious question?</p>
+            <h2>Richer engagement,<br />not just more words.</h2>
+            <p>
+              Curiosity-oriented model questions are associated with more exploratory
+              questions, epistemic markers, and LLM-judged user curiosity in the next user
+              turn. The strongest pattern is richer curiosity content—not simply a higher
+              chance that the user asks any question.
+            </p>
+            <div class="caveat">
+              <span>Important</span>
+              <p>
+                These are adjusted observational associations. Matching and regression do
+                not establish causal effects, and results vary by dataset.
+              </p>
+            </div>
+          </div>
+
+          <figure class="paper-figure compact-figure reveal">
+            <div class="figure-frame">
+              <img
+                src="assets/downstream-engagement.png"
+                alt="Matched-pair and adjusted regression estimates for downstream user engagement outcomes."
+                loading="lazy"
+                width="4352"
+                height="1699"
+              />
+            </div>
+            <figcaption>
+              <span>FIG. 02</span>
+              Pooled matched-pair differences and adjusted regression coefficients for
+              downstream user behavior.
+            </figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="section human-section" id="human-study">
+        <div class="shell">
+          <div class="section-heading split-heading reveal">
+            <div>
+              <p class="kicker">04 — Human study</p>
+              <h2>More questions<br />is not the goal.</h2>
+            </div>
+            <p>
+              Fifty U.S.-based participants evaluated 230 items. They compared a direct
+              answer, a non-curiosity question, and a curiosity-oriented question for
+              preference, naturalness, and curiosity-awakening—along with burden and safety.
+            </p>
+          </div>
+
+          <div class="study-layout">
+            <figure class="paper-figure reveal">
+              <div class="figure-frame">
+                <img
+                  src="assets/human-study.png"
+                  alt="Bar chart comparing direct answers, non-curiosity questions, and curiosity questions on preference, curiosity-awakening, and naturalness."
+                  loading="lazy"
+                  width="2514"
+                  height="1207"
+                />
+              </div>
+              <figcaption>
+                <span>FIG. 03</span>
+                Direct answers are preferred and feel natural; curiosity questions more
+                often make people want to keep exploring.
+              </figcaption>
+            </figure>
+
+            <div class="study-tension reveal">
+              <p class="tension-label">THE CENTRAL TENSION</p>
+              <div class="tension-scale" aria-hidden="true">
+                <span>DIRECTNESS</span>
+                <div><i></i></div>
+                <span>EXPLORATION</span>
+              </div>
+              <h3>Useful curiosity is selective.</h3>
+              <p>
+                Reflective and exploratory questions are more often preferred, natural,
+                and curiosity-awakening. Participants are especially receptive in advice,
+                dilemma, creative, and research-framing contexts—and less receptive when a
+                straightforward explanation is enough.
+              </p>
+              <ul class="context-list">
+                <li><span>Ask more readily</span> Advice · dilemmas · research framing</li>
+                <li><span>Ask with care</span> Reasoning · claims · uncertainty</li>
+                <li><span>Answer first</span> Straightforward explanations</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-ink" id="takeaways">
+        <div class="shell">
+          <div class="section-heading reveal">
+            <p class="kicker">05 — Design implications</p>
+            <h2>Teach models when<br /><em>and how</em> to wonder.</h2>
+          </div>
+
+          <ol class="takeaway-list">
+            <li class="reveal">
+              <span>01</span>
+              <div>
+                <h3>Measure function, not punctuation.</h3>
+                <p>
+                  Separate epistemic questions from clarification, task management,
+                  engagement maintenance, and problematic probing.
+                </p>
+              </div>
+            </li>
+            <li class="reveal">
+              <span>02</span>
+              <div>
+                <h3>Optimize for depth—not conversation length.</h3>
+                <p>
+                  Model curiosity is linked to richer downstream epistemic content, but
+                  simply eliciting another user turn is not the same as helping them think.
+                </p>
+              </div>
+            </li>
+            <li class="reveal">
+              <span>03</span>
+              <div>
+                <h3>Make curiosity timely and low-burden.</h3>
+                <p>
+                  Ask when context and subtype fit. Preserve user autonomy, avoid sensitive
+                  probing, and give a direct answer when further questioning is unnecessary.
+                </p>
+              </div>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="section citation-section" id="citation">
+        <div class="shell citation-grid">
+          <div class="citation-copy reveal">
+            <p class="kicker">06 — Citation</p>
+            <h2>Build on this work.</h2>
+            <p>
+              This anonymous release accompanies the manuscript and provides the taxonomy,
+              analysis code, sanitized samples, and aggregate results.
+            </p>
+          </div>
+
+          <div class="bibtex-card reveal">
+            <div class="bibtex-topbar">
+              <span>BIBTEX</span>
+              <button type="button" data-copy-citation>Copy citation</button>
+            </div>
+            <pre><code id="bibtex">@misc{anonymous2026questioncurious,
+  title={What Makes a Question Curious? Measuring Model
+         Curiosity in Human-LLM Interactions},
+  author={Anonymous},
+  year={2026},
+  note={Anonymous manuscript}
+}</code></pre>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="shell footer-grid">
+        <div class="footer-mark" aria-hidden="true">?</div>
+        <p>
+          What Makes a Question Curious?<br />
+          Anonymous research artifacts
+        </p>
+        <div class="footer-links">
+          <a href="#taxonomy">Taxonomy</a>
+          <a href="#evidence">Results</a>
+          <a href="#top">Back to top ↑</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

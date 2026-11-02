@@ -1,0 +1,9 @@
+feature_set,n_items,positive_items,negative_items,cv_folds,accuracy_mean,macro_f1_mean,useful_f1_mean,useful_precision_mean,useful_recall_mean,auc_mean
+affordance_only,57,18,39,5,0.652,0.625,0.53,0.467,0.633,0.663
+user_plus_question_tfidf,57,18,39,5,0.668,0.618,0.483,0.483,0.517,0.67
+affordance_type_dataset,57,18,39,5,0.598,0.571,0.529,0.453,0.75,0.644
+user_prompt_tfidf,57,18,39,5,0.685,0.562,0.333,0.4,0.3,0.646
+type_only,57,18,39,5,0.562,0.559,0.549,0.413,0.85,0.605
+curiosity_question_tfidf,57,18,39,5,0.565,0.537,0.433,0.397,0.517,0.629
+dummy_stratified,57,18,39,5,0.564,0.503,0.329,0.333,0.333,0.502
+dummy_most_frequent,57,18,39,5,0.685,0.406,0.0,0.0,0.0,0.5

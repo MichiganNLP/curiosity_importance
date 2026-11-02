@@ -1,0 +1,9 @@
+dataset,arm,is_human_curiosity,human_curiosity_pct
+LMSYS,control,0.148,14.799999999999999
+LMSYS,treatment,0.243,24.3
+OASST1,control,0.36752136752136755,36.75213675213676
+OASST1,treatment,0.38247863247863245,38.24786324786324
+ShareGPT,control,0.145,14.499999999999998
+ShareGPT,treatment,0.282,28.199999999999996
+WildChat,control,0.075,7.5
+WildChat,treatment,0.196,19.6

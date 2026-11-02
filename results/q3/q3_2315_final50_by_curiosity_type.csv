@@ -1,0 +1,7 @@
+target_curiosity_type,n,prefer_direct_A_pct,prefer_shallow_B_pct,prefer_curiosity_C_pct,most_curious_direct_A_pct,most_curious_shallow_B_pct,most_curious_curiosity_C_pct,most_natural_direct_A_pct,most_natural_curiosity_C_pct,choiceC_annoying_yes_pct,choiceC_annoying_maybe_pct,should_ask_yes_pct,should_ask_optional_pct,should_ask_no_pct
+causal_explanatory,51,76.5,7.8,15.7,56.9,11.8,31.4,76.5,17.6,33.3,13.7,21.6,31.4,47.1
+counterfactual_hypothetical,42,57.1,19.0,23.8,26.2,11.9,61.9,54.8,31.0,16.7,21.4,31.0,40.5,28.6
+exploratory_broadening,56,58.9,5.4,35.7,42.9,7.1,50.0,58.9,32.1,16.1,17.9,30.4,37.5,32.1
+information_gap_curiosity,30,70.0,0.0,30.0,46.7,3.3,46.7,60.0,36.7,20.0,3.3,30.0,23.3,46.7
+perspective_taking,8,75.0,0.0,25.0,25.0,12.5,62.5,62.5,25.0,12.5,12.5,25.0,25.0,50.0
+reflective_metacognitive,43,58.1,2.3,39.5,39.5,2.3,58.1,60.5,37.2,14.0,16.3,37.2,37.2,25.6

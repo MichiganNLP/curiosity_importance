@@ -1,0 +1,8 @@
+age_group,n_participants,mean_items,useful_curiosity_pct,strong_useful_curiosity_pct,prefer_curiosity_pct,curiosity_awakening_pct,natural_curiosity_pct,should_ask_yes_optional_pct,annoying_yes_pct
+35 - 44,16,4.5,35.3,15.6,31.9,48.4,31.9,65.9,23.8
+25 - 34,14,4.7,38.6,14.6,27.5,49.3,30.7,63.9,23.9
+55 - 64,9,4.7,40.0,16.7,31.1,52.2,30.6,70.6,21.7
+45 - 54,7,4.4,33.6,15.7,25.7,50.7,25.7,49.3,12.9
+18 - 24,2,4.5,42.5,42.5,30.0,67.5,42.5,42.5,0.0
+65 - 74,1,5.0,0.0,0.0,0.0,0.0,0.0,40.0,0.0
+75 - 84,1,5.0,40.0,0.0,20.0,40.0,20.0,100.0,0.0

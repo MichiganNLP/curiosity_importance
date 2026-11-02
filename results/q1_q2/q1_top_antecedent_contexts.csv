@@ -1,0 +1,33 @@
+user_topic,user_question_type,n_real_questions,n_curiosity,curiosity_rate_pct,top_curiosity_type,top_curiosity_type_count,dataset,antecedent
+argument_reasoning,other_statement,177,139,78.53107344632768,causal_explanatory,46,WildChat,argument/reasoning / statement
+learning_studying,how_procedural,325,249,76.61538461538461,information_gap_curiosity,113,WildChat,learning/studying / how
+academic_research,why_causal,351,264,75.21367521367522,information_gap_curiosity,145,WildChat,academic research / why
+business_marketing,command_no_question,53,38,71.69811320754717,causal_explanatory,17,WildChat,business/marketing / command
+argument_reasoning,why_causal,103,73,70.87378640776699,information_gap_curiosity,43,WildChat,argument/reasoning / why
+coding_technical,why_causal,203,136,66.99507389162561,information_gap_curiosity,64,WildChat,coding/technical / why
+academic_research,other_statement,394,253,64.21319796954315,causal_explanatory,124,WildChat,academic research / statement
+academic_research,request_generation,103,66,64.07766990291263,information_gap_curiosity,27,WildChat,academic research / generation
+other,request_generation,150,91,60.66666666666667,causal_explanatory,46,OASST1,other / generation
+writing_creative,request_generation,173,86,49.71098265895954,information_gap_curiosity,31,OASST1,writing/creative / generation
+writing_creative,what_information,65,31,47.69230769230769,information_gap_curiosity,14,OASST1,writing/creative / what/info
+other,how_procedural,155,53,34.193548387096776,information_gap_curiosity,20,OASST1,other / how
+coding_technical,what_information,84,27,32.142857142857146,information_gap_curiosity,13,OASST1,coding/technical / what/info
+life_advice,what_information,120,36,30.0,information_gap_curiosity,19,OASST1,life advice / what/info
+other,what_information,489,134,27.402862985685072,information_gap_curiosity,46,OASST1,other / what/info
+other,other_question,257,69,26.848249027237355,information_gap_curiosity,24,OASST1,other / other question
+academic_research,what_information,1187,871,73.37826453243471,information_gap_curiosity,564,LMSYS,academic research / what/info
+academic_research,how_procedural,144,103,71.52777777777779,information_gap_curiosity,36,LMSYS,academic research / how
+academic_research,why_causal,166,115,69.27710843373494,information_gap_curiosity,54,LMSYS,academic research / why
+argument_reasoning,why_causal,94,65,69.14893617021278,causal_explanatory,38,LMSYS,argument/reasoning / why
+life_advice,command_no_question,126,81,64.28571428571429,information_gap_curiosity,53,LMSYS,life advice / command
+learning_studying,how_procedural,843,535,63.4638196915777,causal_explanatory,203,LMSYS,learning/studying / how
+life_advice,why_causal,148,93,62.83783783783784,causal_explanatory,33,LMSYS,life advice / why
+other,clarification_followup,90,54,60.0,information_gap_curiosity,41,LMSYS,other / clarification follow-up
+learning_studying,why_causal,55,37,67.27272727272727,information_gap_curiosity,14,ShareGPT,learning/studying / why
+writing_creative,why_causal,77,49,63.63636363636363,causal_explanatory,17,ShareGPT,writing/creative / why
+business_marketing,how_procedural,51,31,60.78431372549019,information_gap_curiosity,20,ShareGPT,business/marketing / how
+life_advice,how_procedural,70,42,60.0,information_gap_curiosity,22,ShareGPT,life advice / how
+coding_technical,why_causal,65,39,60.0,exploratory_broadening,15,ShareGPT,coding/technical / why
+learning_studying,what_information,274,160,58.3941605839416,information_gap_curiosity,52,ShareGPT,learning/studying / what/info
+learning_studying,command_no_question,55,32,58.18181818181818,information_gap_curiosity,17,ShareGPT,learning/studying / command
+gaming_roleplay,what_information,56,32,57.14285714285714,information_gap_curiosity,19,ShareGPT,gaming/roleplay / what/info
